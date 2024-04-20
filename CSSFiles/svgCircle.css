@@ -1,0 +1,131 @@
+.HFAnime{
+    /* height: 200px; */
+    /* width: 200px; */
+    /* background-color: rgb(231, 135, 11); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* bottom: 0; */
+}
+/* #heroFooter{
+    background-color: tan;
+}
+#heroFooterDiv1{
+    background-color: rgb(192, 117, 20);
+}
+#heroFooterDiv2{
+    background-color: rgb(192, 117, 20);
+} */
+.circle{
+    z-index: 4;
+    position: relative;
+    width: 100px;
+    height: 100px;   
+    background: url(../images/asterisk.svg);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    -webkit-animation: circle 7s linear infinite;
+            animation: circle 7s linear infinite;   
+}
+.textPara{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotateTxt 10s linear infinite;
+            animation: rotateTxt 10s linear infinite;
+    /* background-color: rgb(77, 84, 114); */    
+    border-radius: 50%;
+    text-transform: uppercase;    
+}
+.textPara span{ 
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    font-size: 11px;
+    font-weight: 400;
+    -webkit-transform-origin: 0 55px;
+        -ms-transform-origin: 0 55px;
+            transform-origin: 0 55px;  
+}
+@-webkit-keyframes circle{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg); 
+    }
+}
+@keyframes circle{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg); 
+    }
+}
+@-webkit-keyframes rotateTxt{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg); 
+    }
+}
+@keyframes rotateTxt{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg); 
+    }
+}
+
+/* "heroFooterDiv2" svg anime */
+.svg{
+    height: 2.7vw;
+    width: 2.7vw;
+    /* display: inline-block; */
+    /* background-color: teal;  */
+    background: url(../images/asterisk.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 67%;
+    -webkit-animation: svg 3s linear infinite;
+            animation: svg 3s linear infinite;
+}
+@-webkit-keyframes svg{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg); 
+    }
+}
+@keyframes svg{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg); 
+    }
+}

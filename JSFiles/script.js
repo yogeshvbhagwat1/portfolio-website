@@ -33,9 +33,6 @@ ScrollTrigger.refresh();
 locomotiveScrollTrigger();
 
 
-
-
-
 function scrollDown(){
     const text = document.querySelector(".textPara");
 text.innerHTML= text.innerText.split("").map(
@@ -43,3 +40,25 @@ text.innerHTML= text.innerText.split("").map(
 `<span style="transform:rotate(${i * 15}deg);">${char}</span>`).join("");    
 }
 scrollDown();
+
+
+function navBtn(){  
+let navRightBtn = document.querySelector("#nav-right");
+let menuBtn = document.querySelector("#menu");
+let closeBtn = document.querySelector("#close");
+
+let ans = menuBtn.addEventListener("click", ()=>{
+    // console.log("start");
+    navRightBtn.style.right = 0;
+    closeBtn.style.display = "block";
+    menuBtn.style.display = "none";
+})
+let ans2 = closeBtn.addEventListener("click", ()=>{
+    // console.log("reverse");
+    navRightBtn.style.right = "-50%";
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "block";
+})
+
+}
+navBtn();

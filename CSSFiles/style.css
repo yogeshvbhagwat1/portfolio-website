@@ -18,9 +18,9 @@ html,body{
 nav{
     width: 100%;
     height: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -30,9 +30,6 @@ nav{
     padding: 0 4.5vw ;
     
     background-color: black;
-    
-    /* background-color: rgb(207, 20, 20); */
-    /* height: 60px; */
 } 
 #nav-h1{
     position: relative;
@@ -84,6 +81,12 @@ nav{
         -ms-transform: scale(1.1);    
             transform: scale(1.1);
 }  
+#MobileIcons {
+    display: none;
+}
+#MobileIcons i{
+    font-size: 3vw;
+}
    /* nav CSS end  */
 
       /* heroSection CSS start  */
@@ -111,12 +114,12 @@ nav{
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    -webkit-text-stroke: 1px white;
     font-family: 'Segoe UI';
     color: black;
     font-size: 8.5vw;
     font-weight: 700;
     line-height: 9vw;
-    -webkit-text-stroke: 1.5px white;
     -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1).3s;
     -o-transition: cubic-bezier(0.19, 1, 0.22, 1).3s;
     transition: cubic-bezier(0.19, 1, 0.22, 1).3s;
@@ -130,11 +133,12 @@ nav{
             transform: scale(1.1);    
 }
 #FR>h1:hover ~ #develp-TranDiv>h1 {
-    -webkit-text-stroke: 1.5px white;
     color: black;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);    
+    -webkit-text-stroke: 1.5px white;
+
 }
 #develp-TranDiv{
     width: -webkit-fit-content;
@@ -164,8 +168,11 @@ nav{
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
-
 #heroFooter{
+    position: absolute;
+    padding: 0 4.5vw; 
+    left: 0;
+    bottom: 10%;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -286,8 +293,7 @@ nav{
     -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1)0.3s;
     -o-transition: cubic-bezier(0.19, 1, 0.22, 1)0.3s;
     transition: cubic-bezier(0.19, 1, 0.22, 1)0.3s;
-    /* margin-bottom: 2vh; */
-    
+       
     /* background-color: #56ae59; */
 }
 #poject1BorderBottem{
@@ -370,7 +376,6 @@ nav{
             transform: scale(1.05);  
 }
 /* page3 css end */
-
 
 /* page4 css start*/
 
@@ -535,11 +540,8 @@ nav{
     height: 100%;
     gap: 1.5vw;
     padding: 0 0 7.5vh 2vw;
-    
     display: -webkit-box;
-    
     display: -ms-flexbox;
-    
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -587,7 +589,6 @@ nav{
     color: black;
     font-size: 2.5vw;
 }
-
 .contactDets a{
     text-decoration: none;
     font-size: 1.4vw;
